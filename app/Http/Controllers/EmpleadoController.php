@@ -89,8 +89,19 @@ class EmpleadoController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Empleado $empleado)
-    {
-        $empleado = Empleado::findOrFail($empleado);
+    {   
+        print($empleado);
+        /*$empleado = Empleado::findOrFail($request->input('));
+        $empleado -> nombres = $request->input('nombres');
+        $empleado -> apellido = $request->input('apellido');
+        $empleado -> cedula = $request->input('cedula');
+        $empleado -> email = $request->input('email');
+        $empleado -> lugar_nacimiento = $request->input('lugar_nacimiento');
+        $empleado -> sexo = $request->input('sexo');
+        $empleado -> estado_civil = $request->input('estado_civil');
+        $empleado -> telefono = $request->input('telefono');
+        $empleado -> save();*/
+        return $empleado;
     }
 
     /**
